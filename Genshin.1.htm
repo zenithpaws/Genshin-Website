@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genshin</title>
+<style>
+   h1 {text-align: center;}
+   p {text-align: center;}
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px; /* Adjust margin as needed */
+  }
+  .image-container img {
+    border: 2px solid black; /* Adjust border style as needed */
+    width: calc(50% - 5%); /* Each image takes up 50% of the container width minus 5% for the border */
+  }
+</style>
+<style>
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px; /* Adjust margin as needed */
+  }
+  .image-container img {
+    border: 2px solid rgb(0, 0, 0); /* Adjust border style as needed */
+    width: calc(50% - 5%); /* Each image takes up 50% of the container width minus 5% for the border */
+  }
+</style>
+</head>
+
+<body bgcolor="#cde0ff">
+  <h1 style="align-items: center;font-size: 150px;color: cadetblue;"><strong>Genshin crap :P</strong></h1>
+  <p style="font-size: 70px; background-color:rgb(5, 91, 141); color: cadetblue;">Furina de Fontaine. The greatest actor of Tevyat </p>
+<div class="image-container">
+  <img src="Genshin.1_files/HI.jpg" alt="Image 1">
+  <img src="Genshin.1_files/Genshin-Impact-Furina-best-build,-Talent-and-Ascension-mater.jpg" alt="Image 2">
+  
+</div> <br>
+<p style="font-size: 70px; background-color:rgb(5, 91, 141);color: cadetblue">Navia. Fight crime while being stylish</p>
+<div class="image-container">
+  <img src="Genshin.1_files/Navi.jpg" alt="N">
+  <img src="Genshin.1_files/Naviviva.jpg" alt="Na">
+  </div>
+
+<br><br><br>
+
+<p style="font-size: 70px; background-color:rgb(5, 91, 141);color: cadetblue">Chiori. Fashion icon of Tevyat</p>
+<div class="image-container">
+  <img style="width: 50%; align-items: center;" src="Genshin.1_files/Chiori.jpg" alt="Chiori">
+  <img src="Genshin.1_files/Ghioriii.jpg" alt="Ghiori">
+</div>
+<div style=" border: 2px solid cadetblue;padding:  20px; width: 80%; margin: 0 auto; background-color: lightblue;">
+  <h1 style="font-size: 55px; color: rgb(64, 85, 204);font-family: 'Brush Script MT', cursive;"><b>Elemental Burst</b></h1>
+ <p style=" font-size: 40px;font-family: 'Brush Script MT', cursive;">"Let my name echo in Song!" <br> "A proper sendoff, from Spina with Love♥" <br> "I am The cutting edge of fashion! <br></p>
+</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
