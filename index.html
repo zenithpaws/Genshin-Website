@@ -67,47 +67,16 @@
             border-radius: 60%;
         }
 </style>
-<style>
-  /* CSS code here */
-  /* Hide default play button */
-  audio::-webkit-media-controls-play-button,
-  audio::-webkit-media-controls-start-playback-button {
-    display: none !important;
-  }
-
-  /* Show custom play button */
-  audio {
-    position: relative;
-    width: 100px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-  }
-
-  audio::before {
-    content: "\25B6"; /* Unicode character for triangle symbol (play icon) */
-    position: absolute;
-    top: 1;
-    left: 10;
-    z-index: 2;
-    width: 50%;
-    height: 50%;
-    font-size: 20px; /* Adjust size as needed */
-    line-height: 30px; /* Adjust line height as needed */
-    text-align: center;
-    background-color: rgb(0, 255, 0); /* Change background color as needed */
-    color: #3eff03; /* Change text color as needed */
-    cursor: pointer;
-  }
-</style>
 </head>
 
-<body bgcolor="grt45">
-  <div class="toolbar">
+<body style="background-color: rgb(41, 58, 139);">
+  <div class="toolbar" style="width: 18%;">
     <a href="#Furina">  Furina</a>
     <a href="#Navia" > Navia</a>
     <a href="#Chiori" >  Chiori</a>
     <a href="#VLine" >Voice Lines</a>
   </div>
-  <H1 style="align-items: center;font-size: 450%; color: cadetblue;"><strong>Genshin crap :P</strong></H1>
+  <H1 style="align-items: center;font-size: 450%; color: rgb(121, 91, 206); background: rgb(66, 0, 128); border: 50%;;;"><strong>Genshin crap :P</strong></H1>
   <p style="font-size: 70px; background-color:rgb(5, 91, 141); color: cadetblue;">Furina de Fontaine. The greatest actor of Tevyat </p>
 
   <section id="Furina">
@@ -143,15 +112,19 @@
   <p style=" font-size: 40px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #7392c2;">"Let my name echo in Song!" <br><br> "A proper sendoff, from Spina with Love♥" <br><br> "I am The cutting edge of fashion! <br><br>                                                            </p>
 </div>
 </section>
-<audio id="myAudio">
+<audio id="myAudio" controls>
 <source  src="VO_Chiori_ElementalBurst.ogg" type="audio/ogg">
-</audio>
+
+</audio> <br><br>
+<Button id="playbutton" style="width: 30px; height: 3%;"><audio>
+  <source  src="VO_Chiori_ElementalBurst.ogg" type="audio/ogg">
+</audio></Button>
+
+<br> <br><br>
 
 
 
-
-
-<div class="toolbar">
+<div class="toolbar" style="width: 8%;">
   <a href="#Top">  Top</a>
   </div>
 
