@@ -7,6 +7,7 @@
 <style>
   h1 {text-align: center;}
   p {text-align: center;}
+  a {text-align: center;}
   .image-container {
     display: flex;
     justify-content: space-between;
@@ -32,18 +33,17 @@
   /* Basic styling for the toolbar */
   .toolbar {
     background-color: #383249;
-    overflow:auto;
-  }
+    overflow:hidden;
+  } 
 
   /* Style for toolbar links */
   .toolbar a {
- height: 20px;
- 
-    float: left;
-    display: block;
+
+    float:left;
+    display:inline;
     color: lightskyblue;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 16px 15px;
     text-decoration: none;
   }
 
@@ -66,10 +66,41 @@
             left: 30%;
             border-radius: 60%;
         }
-</style
+</style>
+<style>
+  /* CSS code here */
+  /* Hide default play button */
+  audio::-webkit-media-controls-play-button,
+  audio::-webkit-media-controls-start-playback-button {
+    display: none !important;
+  }
+
+  /* Show custom play button */
+  audio {
+    position: relative;
+    width: 100px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+  }
+
+  audio::before {
+    content: "\25B6"; /* Unicode character for triangle symbol (play icon) */
+    position: absolute;
+    top: 1;
+    left: 10;
+    z-index: 2;
+    width: 50%;
+    height: 50%;
+    font-size: 20px; /* Adjust size as needed */
+    line-height: 30px; /* Adjust line height as needed */
+    text-align: center;
+    background-color: rgb(0, 255, 0); /* Change background color as needed */
+    color: #3eff03; /* Change text color as needed */
+    cursor: pointer;
+  }
+</style>
 </head>
 
-<body background-color="#cde0ff>
+<body bgcolor="grt45">
   <div class="toolbar">
     <a href="#Furina">  Furina</a>
     <a href="#Navia" > Navia</a>
@@ -104,16 +135,24 @@
 </div>
 </section>
 <br>
+
 <section id="VLine">
-   
 <div style=" border: 2px solid cadetblue;padding:  20px; width: 80%; margin: 0 auto; background-color: lightblue;">
-  <h1 style="font-size: 55px; color:#4b6996;font-family: Impact, sans-serif;"><b>Elemental Burst voice Lines</b></h1>
-  <p style=" font-size: 40px;font-family: Impact, sans-serif;color: #7392c2;">"Let my name echo in Song!" <br><br> "A proper sendoff, from Spina with Love♥" <br><br> "I am The cutting edge of fashion! <br><br>                                                            </p>
+  <h1 style="font-size: 55px; color:#4b6996;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"><b>Elemental Burst voice Lines</b></h1>
+  <p style=" font-size: 40px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #7392c2;">"Let my name echo in Song!" <br><br> "A proper sendoff, from Spina with Love♥" <br><br> "I am The cutting edge of fashion! <br><br>                                                            </p>
 </div>
-
-
-
 </section>
+<audio id="myAudio">
+<source  src="VO_Chiori_ElementalBurst.ogg" type="audio/ogg">
+</audio>
+
+
+
+
+
+<div class="toolbar">
+  <a href="#Top">  Top</a>
+  </div>
 
 </body>
 </html>
